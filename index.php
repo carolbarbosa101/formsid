@@ -564,10 +564,7 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <br><br><br>
 
 
-                        <img src="captcha.php?l=150&a=50&tf=20&ql=5"/> <form action="validar.php" name="form" method="post">
-                        <input type="text" name="palavra"  />
-                        <input type="submit" value="Validar Captcha" />
-                        </form><br>
+                        
                         <label>Digite os caracteres acima: </label>
                         <br>
                         <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />
