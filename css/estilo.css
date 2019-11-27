@@ -1,0 +1,11 @@
+
+.form-input.formescoder.hidden{
+  opacity:0;
+    width: 0;
+ 
+}
+#responsavelmesmo:active .form-input.formescoder.hidden{
+  opacity:1;
+    width: 100%;
+     transition:opacity 1s linear,width 2s linear;
+}

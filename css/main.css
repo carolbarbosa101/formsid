@@ -1,0 +1,26 @@
+#form1 input#nomeInst, #form1 input#nomeTele, #form1 input#programaCon, #form1 input#nomeRepresentante, #form1 input#endereco, #form1 input#nomeGestor {
+    width: 80%;
+}
+.form-input {
+    overflow: hidden;
+    width: 100%;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	width: 90%;
+}
+#form1 input#nome, #form1 input#cargo, #form1 input#nomePref{
+	width: 80%;
+}
+#form1 input#email, #form1 input#emailPref, #form1 input#municipio{
+ 	width: 40%;	
+ }
+#form1 input#cnpj, #form1 input#telefone, #form1 input#cpfRe, #form1 input#telefoneAl, #form1 input#cpfGe, #form1 input#celPref, #form1 input#uf, #form1 input#captcha{
+	width: auto;
+}
+#form1 input#cep{
+	width: auto;
+	margin-bottom: 0px;
+}
+#form1 textarea{
+	width: 90%;
+}
