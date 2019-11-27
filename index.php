@@ -159,17 +159,17 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
             <div class="container">
                 <form id="form1" action="Cadastrar.php" method="post">
 
-                    <h3 class="titulo" style="text-align: center;">TERMO DE ADESÃO DE TELECENTROS AO PROGRAMA NACIONAL DE FORMAÇÃO DE AGENTES DE INCLUSÃO DIGITAL - PNAID</h3>
+                    <h3 class="titulo" style="text-align: center;">TERMO DE ADESÃO DE PONTO DE INCLUSÃO DIGITAL AO PROGRAMA NACIONAL DE FORMAÇÃO DE AGENTES DE INCLUSÃO DIGITAL - PNAID</h3>
                     <br>
 
-                    <p>Prezado Gestor de Telecentro,</p>
+                    <p>Prezado Gestor de Ponto de inclusão digital,</p>
                     <br>
 
                     <div style="float:left; width:30px;">
                         <p>1.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Você está prestes a aderir ao Programa Nacional de Formação de Agentes de Inclusão Digital – PNAID. Este programa foi criado pelo Ministério da Ciência, Tecnologia, Inovações e Comunicações – MCTIC, mediante a <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=6&data=06/07/2017" target="_blank">Portaria nº 2081/2017/MCTIC</a> , de 4/7/2017, publicado no Diário Oficial da União de 6/7/2017, para revitalizar os Telecentros em todo o Brasil.</p>
+                        <p style="text-align: justify;">Você está prestes a aderir ao Programa Nacional de Formação de Agentes de Inclusão Digital – PNAID. Este programa foi criado pelo Ministério da Ciência, Tecnologia, Inovações e Comunicações – MCTIC, mediante a <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=6&data=06/07/2017" target="_blank">Portaria nº 2081/2017/MCTIC</a> ,de 4/7/2017, publicado no Diário Oficial da União de 6/7/2017, para revitalizar os Ponto de Inclusão Digital - PID em todo o Brasil.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
@@ -183,42 +183,36 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <p>3.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Ao aderir ao Programa, você estará dando ao seu Telecentro, se ele for selecionado, a oportunidade de indicar candidatos à realização do curso de Formação de Agentes de Inclusão Digital. A indicação de candidato(s) será feita, em data a ser divulgada pelo MCTIC, por meio de formulário próprio disponibilizado via Internet aos Telecentros selecionados. O curso será ofertado na modalidade de ensino a distância – EAD, com 480 horas-aulas e duração de 10 meses.</p>
+                        <p style="text-align: justify;">Ao aderir ao Programa, você estará dando ao seu Ponto de Inclusão Digital - PID, se ele for selecionado, a oportunidade de indicar candidatos à realização do curso de Formação de Agentes de Inclusão Digital. A indicação de candidato(s) será feita, em data a ser divulgada pelo MCTIC, por meio de formulário próprio disponibilizado via Internet aos Ponto de Inclusão Digital - PID selecionados. O curso será ofertado na modalidade de ensino a distância – EAD, com 480 horas-aulas e duração de 10 meses.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>4.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Os candidatos indicados pelo seu Telecentro e que forem aprovados no processo seletivo vão iniciar o curso em 2018. Eles serão monitores-bolsistas que dedicarão, diariamente, duas horas para a realização do curso e mais duas horas para auxiliar o Telecentro em suas atividades.</p>
+                        <p style="text-align: justify;">Os candidatos indicados pelo seu Ponto de Inclusão Digital - PID e que forem aprovados no processo seletivo vão iniciar o curso em 2020. Eles serão monitores que dedicarão, diariamente, duas horas para a realização do curso e mais duas horas para auxiliar o Ponto de Inclusão Digital - PID em suas atividades.</p>
                     </div>
 
+                    
                     <div style="float:left; width:30px;">
                         <p>5.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Os monitores-bolsistas receberão, no período de duração do curso, uma bolsa-auxílio, no valor de R$ 400 por mês. Na parte final do curso, eles irão desenvolver e implantar um Projeto Comunitário, com o apoio de um Professor-Orientador.</p>
+                        <p style="text-align: justify;">Para aderir ao PNAID, o seu Ponto de Inclusão Digital - PID deverá atender os requisitos exigidos no <u><a href="edital.pdf" target="_blank">Edital MCTIC N° 47/2017/SEI-MCTIC</a></u>.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>6.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Para aderir ao PNAID, o seu Telecentro deverá atender os requisitos exigidos no <u><a href="edital.pdf" target="_blank">Edital MCTIC N° 47/2017/SEI-MCTIC</a></u>.</p>
+                        <p style="text-align: justify;">O primeiro passo é ler o Edital com atenção. Em seguida, deverá preencher o Termo de Adesão, tendo cuidado para informar corretamente todos os dados solicitados.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>7.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">O primeiro passo é ler o Edital com atenção. Em seguida, deverá preencher o Termo de Adesão, tendo cuidado para informar corretamente todos os dados solicitados.</p>
-                    </div>
-
-                    <div style="float:left; width:30px;">
-                        <p>8.</p>
-                    </div>
-                    <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Qualquer dúvida referente ao preenchimento deste Termo de Adesão poderá ser sanada por meio dos telefones (61) 2027-5458, (61) 2027-5370, (61) 2027-6341, (61) 2027-5378, de segunda a sexta-feira, em horário comercial, ou pelo e-mail: cofor@mctic.gov.br</p>
+                        <p style="text-align: justify;">Qualquer dúvida referente ao preenchimento deste Termo de Adesão poderá ser sanada por meio dos telefones (61) 2027-5458, (61) 2027-5370, de segunda a sexta-feira, em horário comercial, ou pelo e-mail: cofor@mctic.gov.br</p>
                     </div>
                     <br><br>
                     <center>
@@ -570,8 +564,7 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <br><br><br>
 
 
-                        <img src="showCaptcha.php" alt="captcha" id="captchaImg" /><button class="btn btn-default" type="button" onclick="$('#captchaImg').attr('src', 'showCaptcha.php');" style="padding:0;margin-left:30px;height:25px;width:25px;"><img src="img/refresh.png" alt="" style="height:20px;width:20px;"/></button>
-                        <br>
+                        
                         <label>Digite os caracteres acima: </label>
                         <br>
                         <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />
