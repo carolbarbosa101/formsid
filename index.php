@@ -159,7 +159,7 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
             <div class="container">
                 <form id="form1" action="Cadastrar.php" method="post">
 
-                    <h3 class="titulo" style="text-align: center;">TERMO DE ADESÃO DE PONTO DE INCLUSÃO DIGITAL AO PROGRAMA NACIONAL DE FORMAÇÃO DE AGENTES DE INCLUSÃO DIGITAL - PNAID</h3>
+                    <h3 class="titulo" style="text-align: center;">Termo de Adesão de Ponto de Inclusão Digital ao Programa Nacional de Formação de Agentes de Inclusão Digital - PNAID</h3>
                     <br>
 
                     <p>Prezado Gestor de Ponto de inclusão digital,</p>
@@ -169,28 +169,28 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <p>1.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Você está prestes a aderir ao Programa Nacional de Formação de Agentes de Inclusão Digital – PNAID. Este programa foi criado pelo Ministério da Ciência, Tecnologia, Inovações e Comunicações – MCTIC, mediante a <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=6&data=06/07/2017" target="_blank">Portaria nº 2081/2017/MCTIC</a> ,de 4/7/2017, publicado no Diário Oficial da União de 6/7/2017, para revitalizar os Ponto de Inclusão Digital - PID em todo o Brasil.</p>
+                        <p style="text-align: justify;">Este Termo de Adesão é parte inseparável do Edital de Adesão de Ponto de Inclusão Digital ao Programa Nacional de Formação de Agentes de Inclusão Digital - MCTIC – nº xx/2020.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>2.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">O objetivo do PNAID é formar profissionais capacitados a atender, ajudar e ensinar os cidadãos na utilização de computadores e no acesso à Internet.</p>
+                        <p style="text-align: justify;">O seu preenchimento é condição indispensável para que o Ponto de Inclusão Digital possa participar deste processo. É importante preencher todos os campos.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>3.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Ao aderir ao Programa, você estará dando ao seu Ponto de Inclusão Digital - PID, se ele for selecionado, a oportunidade de indicar candidatos à realização do curso de Formação de Agentes de Inclusão Digital. A indicação de candidato(s) será feita, em data a ser divulgada pelo MCTIC, por meio de formulário próprio disponibilizado via Internet aos Ponto de Inclusão Digital - PID selecionados. O curso será ofertado na modalidade de ensino a distância – EAD, com 480 horas-aulas e duração de 10 meses.</p>
+                        <p style="text-align: justify;">Para fins de adesão, será considerado somente um formulário por Ponto de Inclusão Digital. Uma vez preenchido, o formulário irá gerar a chave de identificação (ID) do Ponto de Inclusão Digital.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>4.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Os candidatos indicados pelo seu Ponto de Inclusão Digital - PID e que forem aprovados no processo seletivo vão iniciar o curso em 2020. Eles serão monitores que dedicarão, diariamente, duas horas para a realização do curso e mais duas horas para auxiliar o Ponto de Inclusão Digital - PID em suas atividades.</p>
+                        <p style="text-align: justify;">Os Pontos de Inclusão Digital selecionados indicarão candidato(s) ao processo seletivo do curso de Formação de Agentes de Inclusão Digital, conforme condições estabelecidas no item 6.1.1 do Edital. A indicação de candidato(s) será feita posteriormente, por meio da plataforma do Instituto Federal do Rio Grande do Norte – IFRN.</p>
                     </div>
 
                     
@@ -198,21 +198,28 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <p>5.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Para aderir ao PNAID, o seu Ponto de Inclusão Digital - PID deverá atender os requisitos exigidos no <u><a href="edital.pdf" target="_blank">Edital MCTIC N° 47/2017/SEI-MCTIC</a></u>.</p>
+                        <p style="text-align: justify;">Estabelecer lista de candidatos para participarem do curso de Formação de Agentes de Inclusão Digital. Os candidatos constantes da lista submetida pelo responsável pelo PID deverão atender os seguintes pré-requisitos:
+                            <ul>
+                            <li>Ter mais de 16 (dezesseis) anos. </li>
+                            <li>E ter concluído o Ensino Fundamental no momento da pré-seleção pelo respectivo Ponto de Inclusão Digital.</li>
+                            </ul>
+                    </a>
+                    </u>
+                    </p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>6.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">O primeiro passo é ler o Edital com atenção. Em seguida, deverá preencher o Termo de Adesão, tendo cuidado para informar corretamente todos os dados solicitados.</p>
+                        <p style="text-align: justify;">A lista de candidatos deve ser enviada pelo PID relacionando os candidatos na ordem preferencial para realização do curso, sendo que deve ser levada em consideração no estabelecimento desta ordem os candidatos partícipes de programas sociais do Governo Federal. O candidato deve estar ciente que a desistência do curso em andamento acarretará penalidade de 24 meses sem poder se inscrever em novos processos seletivo deste Departamento Inclusão Digital - DEIDI.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
                         <p>7.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Qualquer dúvida referente ao preenchimento deste Termo de Adesão poderá ser sanada por meio dos telefones (61) 2027-5458, (61) 2027-5370, de segunda a sexta-feira, em horário comercial, ou pelo e-mail: cofor@mctic.gov.br</p>
+                        <p style="text-align: justify;">Qualquer dúvida referente ao preenchimento deste Termo de Adesão poderá ser sanada por meio dos telefones (61) 2027-5458, (61) 2027-5370, de segunda a sexta-feira, em horário comercial, ou pelo e-mail: cofor@mctic.gov.br.</p>
                     </div>
                     <br><br>
                     <center>
@@ -565,11 +572,12 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
 
 
                         
-                        <label>Digite os caracteres acima: </label>
+               <!--          <label>Digite os caracteres acima: </label> -->
                         <br>
-                        <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />
-                        <div id="campo_captcha"> </div> <br>
-                        <br>
+              <!--           <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />-->
+              <!--         <div id="campo_captcha"> </div> <br> -->
+                  
+                        <button type="submit">Enviar</button>
                         </form>
                     </div>
             </div>

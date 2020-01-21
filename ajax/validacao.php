@@ -9,9 +9,9 @@ if ($campo == "captcha") {
     if (strtolower($valor) != strtolower($_SESSION['captcha'])) {
         echo "Preencha o código corretamente";
     } elseif (strlen($valor) > 28) {
-        echo "O login deve ter no mï¿½ximo 28 caracteres";
+        echo "O login deve ter no maximo 28 caracteres";
     } elseif (strlen($valor) < 4) {
-        echo "O login deve ter no minï¿½mo 4 caracteres";
+        echo "O login deve ter no minimo 4 caracteres";
     } elseif (!preg_match('/^[a-z\d_]{4,28}$/i', $valor)) {
         echo "O login deve conter somente letras e numeros.";
     }
