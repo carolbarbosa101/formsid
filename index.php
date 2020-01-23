@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <?php
 session_start();
 
@@ -9,7 +9,8 @@ $busca = 'SELECT * FROM tb_estados';
 $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
 ?>
 
-    <html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
 
     <HEAD>
         <title>Formulário de inscrição PNAID</title>
@@ -17,6 +18,16 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" />
         <link rel="stylesheet" href="http://www2.mcti.gov.br/templates/padraogoverno01/css/template-verde.css" type="text/css">
+
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="css/bootstrap-3-3-7.min.css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.mc.verde.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.mc.min.css">
+        <!--<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" type="text/css">-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery-1-12-1.ui.css">
+
 
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/estilo.css">
@@ -113,48 +124,61 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
 
     </HEAD>
 
-    <body style="margin-top: -20px;">
-
-        <header>
+    <body>
+	<!-- BARRA DO GOVERNO -->
+<div id="barra-brasil">
+	<div id="wrapper-barra-brasil">
+		<div class="brasil-flag">
+			<a href="http://brasil.gov.br" class="link-barra">Brasil</a>
+		</div>
+		<span class="acesso-info"><a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="link-barra" id="barra-brasil-orgao">Serviços</a></span>
+		<nav>
+			<ul id="lista-barra-brasil" class="list">
+				<li><a href="#" id="menu-icon"></a></li>
+				<li class="list-item first"><a href="http://www.simplifique.gov.br" class="link-barra">Simplifique!</a></li>
+				<li class="list-item"><a href="http://brasil.gov.br/barra#participe" class="link-barra">Participe</a></li>
+				<li class="list-item"><a href="http://brasil.gov.br/barra#acesso-informacao" class="link-barra">Acesso à informação</a></li>
+				<li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li>
+				<li class="list-item last last-item"><a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="link-barra">Canais</a></li>
+			</ul>
+		</nav>
+		<span id="brasil-vlibras"><a class="logo-vlibras" href="#"></a>
+			<span class="link-vlibras"><img src="//barra.brasil.gov.br/imagens/vlibras.gif">&nbsp;
+				<span>O conteÃºdo desse portal pode ser acessÃ­vel em Libras usando o <a href="http://www.vlibras.gov.br">VLibras</a></span>
+			</span>
+		</span>
+	</div>
+</div>
+<script type="text/javascript" src="http://www.mctic.gov.br/mctic/opencms/system/modules/br.com.squadra.principal/resources/js/barra.js"></script>
+<!-- FIM BARRA DO GOVERNO -->
+<header>
             <div class="container">
-                <div class="row-fluid accessibility-language-actions-container">
+                <div class="row-fluid">
                     <div class="span8 accessibility-container">
                         <ul id="accessibility">
-                            <li>
-                                <a accesskey="1" href="#link-conteudo" id="link">
+                            <li> <a accesskey="1" href="#formCadastro" id="link">
                                     Ir para o cadastro
-                                    <span>1</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a accesskey="4" href="#footer" id="link-rodape">
+                                </a> </li>
+                            <li> <a accesskey="4" href="#footer" id="link-rodape">
                                     Ir para o rodapé
-                                    <span>4</span>
-                                </a>
-                            </li>
+                                </a> </li>
                         </ul>
                     </div>
                     <!-- fim div.span8 -->
                     <div class="span4 language-and-actions-container">
-                        <h2 class="hide">Acessibilidade</h2>
-                    </div>
+                        <h2 class="hide">Acessibilidade</h2> </div>
                     <!-- fim div.span4 -->
                 </div>
                 <div class="row-fluid">
                     <div id="logo" class="span8 big">
-                        <a href="http://mc.gov.br/" title="Comunicações">
-                            <span class="portal-title-1">Ministério da</span>
-                            <h1 class="portal-title corto">Ciência, Tecnologia, Inovações e Comunicações</h1>
-                            <span class="portal-description"></span>
-                        </a>
+                        <a target="_blank" href="http://www.mctic.gov.br/" title="Comunicações">
+                        <h1 class="portal-title corto">Ministério da Ciência, Tecnologia, Inovações e Comunicações </h1><span class="portal-description"></span> </a>
                     </div>
                     <!-- fim .span8 -->
                     <!-- fim .span4 -->
                 </div>
             </div>
         </header>
-
-
         <div id="div_conteudo" class="conteudo">
             <div class="container">
                 <form id="form1" action="Cadastrar.php" method="post">
@@ -169,7 +193,7 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                         <p>1.</p>
                     </div>
                     <div style="margin-left:31px;">
-                        <p style="text-align: justify;">Este Termo de Adesão é parte inseparável do Edital de Adesão de Ponto de Inclusão Digital ao Programa Nacional de Formação de Agentes de Inclusão Digital - MCTIC – nº xx/2020.</p>
+                        <p style="text-align: justify;">Este Termo de Adesão é parte inseparável do Edital de Adesão de Ponto de Inclusão Digital ao Programa Nacional de Formação de Agentes de Inclusão Digital - MCTIC –EDITAL Nº 6/2020/SEI-MCTIC.</p>
                     </div>
 
                     <div style="float:left; width:30px;">
@@ -199,13 +223,13 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
                     </div>
                     <div style="margin-left:31px;">
                         <p style="text-align: justify;">Estabelecer lista de candidatos para participarem do curso de Formação de Agentes de Inclusão Digital. Os candidatos constantes da lista submetida pelo responsável pelo PID deverão atender os seguintes pré-requisitos:
-                            <ul>
-                            <li>Ter mais de 16 (dezesseis) anos. </li>
-                            <li>E ter concluído o Ensino Fundamental no momento da pré-seleção pelo respectivo Ponto de Inclusão Digital.</li>
-                            </ul>
+                     
                     </a>
-                    </u>
                     </p>
+                    <ul>
+                        <p>Ter mais de 16 (dezesseis) anos.</p>
+                        <p>E ter concluído o Ensino Fundamental no momento da pré-seleção pelo respectivo Ponto de Inclusão Digital.</p>
+                    </ul>
                     </div>
 
                     <div style="float:left; width:30px;">
@@ -577,37 +601,23 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
               <!--           <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />-->
               <!--         <div id="campo_captcha"> </div> <br> -->
                   
-                        <button type="submit">Enviar</button>
+                     
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                         </form>
                     </div>
             </div>
 
-        <footer id="footer">
+            <footer id="footer">
             <div class="container container-menus">
-                <div id="footer" class="row footer-menus">
-                </div>
+                <div id="footer" class="row footer-menus"> </div>
             </div>
             <div class="footer-logos">
                 <div class="container">
-                    <a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="http://www2.mcti.gov.br/templates/padraogoverno01/images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+                    <a target="_blank" href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="img/acessoInformacao.png" alt="Acesso a Informação"></a>
                     <!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span>
                     <!-- fim separador para fins de acessibilidade -->
-                    <a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="http://www2.mcti.gov.br/templates/padraogoverno01/images/brasil.png" alt="Brasil - Governo Federal"></a>
+                    <a target="_blank" href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="img/logo-governo-federal.png" alt="Brasil - Governo Federal"></a>
                 </div>
             </div>
         </footer>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-        <script type="text/javascript">
-            $(function() {
-                $('[data-toggle="tooltip"]').tooltip()
-                $('[data-toggle="popover"]').popover()
-            })
-        </script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    </body>
-
-    </html>
+    

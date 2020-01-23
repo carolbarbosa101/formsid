@@ -1,0 +1,82 @@
+.red{
+    color: red;
+}
+
+.form-control{
+    width: 755px;
+}
+.btn btn-primary{
+    align: center ;
+}
+.menor{
+    width: 250px;
+}
+
+.data-menor{
+    width: 150px;
+}
+
+a:link {
+    color: white;
+}
+/* link que foi visitado */
+
+a:visited {
+    color: white;
+}
+/* mouse over */
+
+a:hover {
+    color: white;
+}
+/* link selecionado */
+
+a:active {
+    color: white;
+}
+            
+#lista-barra-brasil{
+    color: #00a7ff;
+}
+
+.lupa {
+    color: dodgerblue;
+}
+
+.lixo {
+    color: crimson;
+    margin-left: 30px;
+}
+.painel{
+    background-color:
+}
+
+img.ui-datepicker-trigger{
+    width: 25px;
+    height: 26px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: solid 1px #bababa;
+    border-radius: 0px 5px 5px 0px; 
+    margin-left: -2px;
+}
+img.ui-datepicker-trigger:hover{
+    background-color: #ededed;
+}
+
+select.ui-datepicker-month, select.ui-datepicker-year{
+    height: 26px;
+}
+
+#linkAzul:link{
+            color: #56c4ff;
+        }
+
+        #linkAzul:hover{
+            color: #00a7ff;
+        }
+
+        #linkAzul:visited{
+            color: #4d008e;
+        }
+        
