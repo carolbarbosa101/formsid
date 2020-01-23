@@ -25,12 +25,16 @@ if ($_POST) {
     $telefone = $_POST['telefone'];
     $telefoneAl = $_POST['telefoneAl'];
     $email = $_POST['email'];
-    $urlSite = $_POST['urlSite'];
-    $nomeGestor = $_POST['nomeGestor'];
-    $cpfGe = $_POST['cpfGe'];
+
+    $urlSite = isset($_POST['urlSite']) ? $_POST['urlSite'] : 'null';
+    $nomeGestor = isset($_POST['nomeGestor']) ? $_POST['nomeGestor'] : 'null';
+    $cpfGe = isset($_POST['cpfGe']) ? $_POST['cpfGe'] : 'null';
+
     $responsavelmesmo = $_POST['responsavelmesmo'];
-    $telefoneRespo = $_POST['telefoneRespo'];
-    $emailRespo = $_POST['emailRespo'];
+
+    $telefoneRespo = isset($_POST['telefoneRespo']) ? $_POST['telefoneRespo'] : 'null';
+    $emailRespo = isset($_POST['emailRespo']) ? $_POST['emailRespo'] : 'null';
+
     $qtdcomp = $_POST['qtdcomp'];
     $velobl = $_POST['velobl'];
 
@@ -52,6 +56,7 @@ if ($_POST) {
     $telefone = mysqli_real_escape_string($con3ct, $telefone);
     $telefoneAl = mysqli_real_escape_string($con3ct, $telefoneAl);
     $email = mysqli_real_escape_string($con3ct, $email);
+
     $urlSite = mysqli_real_escape_string($con3ct, $urlSite);
     $nomeGestor = mysqli_real_escape_string($con3ct, $nomeGestor);
     $cpfGe = mysqli_real_escape_string($con3ct, $cpfGe);
@@ -69,21 +74,28 @@ if ($_POST) {
     //-----------
 
     $resposta = $objetoBase->abrirConsulta($sql);
+    //var_dump($resposta);
     //-----------
     if ($resposta != $cnpj) {
         if ($responsavelmesmo == "nao"){
-        $sql = "INSERT INTO tb_cadastromc(horario_inscricao,nomeInst,cnpj,nomeTele,situacaoTele,nomeRepresentante,cpfRe,telefoneRe,emailRe,estado,cidade,bairro,cep,endereco,telefone,telefoneAl,email,urlSite,nomeGestor,cpfGe,telefoneRespo,emailRespo,qtdcomp,velobl) VALUES (SYSDATE(),'" . $nomeInst . "','" . $cnpj . "','" . $nomeTele . "','" . $situacaoTele . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $estado . "','" . $cidade . "','" . $bairro . "','" . $cep . "','" . $endereco . "','" . $telefone . "', '" . $telefoneAl . "','" . $email . "','" . $urlSite . "','" . $nomeGestor . "','" . $cpfGe . "','" . $telefoneRespo . "','" . $emailRespo . "','" . $qtdcomp . "','" . $velobl . "');";
+            $sql = "INSERT INTO tb_cadastromc(horario_inscricao,nomeInst,cnpj,nomeTele,situacaoTele,nomeRepresentante,cpfRe,telefoneRe,emailRe,estado,cidade,bairro,cep,endereco,telefone,telefoneAl,email,urlSite,nomeGestor,cpfGe,telefoneRespo,emailRespo,qtdcomp,velobl) VALUES (SYSDATE(),'" . $nomeInst . "','" . $cnpj . "','" . $nomeTele . "','" . $situacaoTele . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $estado . "','" . $cidade . "','" . $bairro . "','" . $cep . "','" . $endereco . "','" . $telefone . "', '" . $telefoneAl . "','" . $email . "','" . $urlSite . "','" . $nomeGestor . "','" . $cpfGe . "','" . $telefoneRespo . "','" . $emailRespo . "','" . $qtdcomp . "','" . $velobl . "');";
+                //print_r($sql);
+            $teste = $objetoBase->executarSQL($sql);
+            //var_dump($teste);
             
-        $objetoBase->executarSQL($sql);
-        header("Location: cadastroEfetuado.php?nomeInst=$nomeInst&cnpj=$cnpj&nomeTele=$nomeTele&situacaoTele=$situacaoTele&nomeRepresentante=$nomeRepresentante&cpfRe=$cpfRe&estado=$estado&cidade=$cidade&bairro=$bairro&cep=$cep&endereco=$endereco&telefone=$telefone&telefoneAl=$telefoneAl&email=$email&urlSite=$urlSite&nomeGestor=$nomeGestor&cpfGe=$cpfGe&qtdcomp=$qtdcomp&velobl=$velobl&telefoneRe=$telefoneRe&telefoneRespo=$telefoneRespo&emailRe=$emailRe&emailRespo=$emailRespo");
+    //die();
+            header("Location: cadastroEfetuado.php?nomeInst=$nomeInst&cnpj=$cnpj&nomeTele=$nomeTele&situacaoTele=$situacaoTele&nomeRepresentante=$nomeRepresentante&cpfRe=$cpfRe&estado=$estado&cidade=$cidade&bairro=$bairro&cep=$cep&endereco=$endereco&telefone=$telefone&telefoneAl=$telefoneAl&email=$email&urlSite=$urlSite&nomeGestor=$nomeGestor&cpfGe=$cpfGe&qtdcomp=$qtdcomp&velobl=$velobl&telefoneRe=$telefoneRe&telefoneRespo=$telefoneRespo&emailRe=$emailRe&emailRespo=$emailRespo");
         }else{
-        $sql = "INSERT INTO tb_cadastromc(horario_inscricao,nomeInst,cnpj,nomeTele,situacaoTele,nomeRepresentante,cpfRe,telefoneRe,emailRe,estado,cidade,bairro,cep,endereco,telefone,telefoneAl,email,urlSite,nomeGestor,cpfGe,telefoneRespo,emailRespo,qtdcomp,velobl) VALUES (SYSDATE(),'" . $nomeInst . "','" . $cnpj . "','" . $nomeTele . "','" . $situacaoTele . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $estado . "','" . $cidade . "','" . $bairro . "','" . $cep . "','" . $endereco . "','" . $telefone . "', '" . $telefoneAl . "','" . $email . "','" . $urlSite . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $qtdcomp . "','" . $velobl . "');";
-            
-        $objetoBase->executarSQL($sql);
-        header("Location: cadastroEfetuado.php?nomeInst=$nomeInst&cnpj=$cnpj&nomeTele=$nomeTele&situacaoTele=$situacaoTele&nomeRepresentante=$nomeRepresentante&cpfRe=$cpfRe&estado=$estado&cidade=$cidade&bairro=$bairro&cep=$cep&endereco=$endereco&telefone=$telefone&telefoneAl=$telefoneAl&email=$email&urlSite=$urlSite&nomeGestor=$nomeRepresentante&cpfGe=$cpfRe&qtdcomp=$qtdcomp&velobl=$velobl&telefoneRe=$telefoneRe&telefoneRespo=$telefoneRe&emailRe=$emailRe&emailRespo=$emailRe");
+            $sql = "INSERT INTO tb_cadastromc(horario_inscricao,nomeInst,cnpj,nomeTele,situacaoTele,nomeRepresentante,cpfRe,telefoneRe,emailRe,estado,cidade,bairro,cep,endereco,telefone,telefoneAl,email,urlSite,nomeGestor,cpfGe,telefoneRespo,emailRespo,qtdcomp,velobl) VALUES (SYSDATE(),'" . $nomeInst . "','" . $cnpj . "','" . $nomeTele . "','" . $situacaoTele . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $estado . "','" . $cidade . "','" . $bairro . "','" . $cep . "','" . $endereco . "','" . $telefone . "', '" . $telefoneAl . "','" . $email . "','" . $urlSite . "','" . $nomeRepresentante . "','" . $cpfRe . "','" . $telefoneRe . "','" . $emailRe . "','" . $qtdcomp . "','" . $velobl . "');";
+            //print_r($sql);
+            $teste = $objetoBase->executarSQL($sql);
+            //var_dump($teste);
+    //die();
+            header("Location: cadastroEfetuado.php?nomeInst=$nomeInst&cnpj=$cnpj&nomeTele=$nomeTele&situacaoTele=$situacaoTele&nomeRepresentante=$nomeRepresentante&cpfRe=$cpfRe&estado=$estado&cidade=$cidade&bairro=$bairro&cep=$cep&endereco=$endereco&telefone=$telefone&telefoneAl=$telefoneAl&email=$email&urlSite=$urlSite&nomeGestor=$nomeRepresentante&cpfGe=$cpfRe&qtdcomp=$qtdcomp&velobl=$velobl&telefoneRe=$telefoneRe&telefoneRespo=$telefoneRe&emailRe=$emailRe&emailRespo=$emailRe");
         }
         //     
         //
     }
+    //die();
 }
 ?>
