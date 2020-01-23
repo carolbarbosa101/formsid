@@ -596,10 +596,10 @@ $result = $db->query($busca, PDO::FETCH_ASSOC) or die("erro");
 
 
                         
-               <!--          <label>Digite os caracteres acima: </label> -->
+                        <label>Digite os caracteres acima: </label>
                         <br>
-              <!--           <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />-->
-              <!--         <div id="campo_captcha"> </div> <br> -->
+                        <input type="text" id="captcha" maxlength="4" onkeyup="validarDados('captcha', document.getElementById('captcha').value);" />
+                       <div id="campo_captcha"> </div> <br> 
                   
                      
                         <button class="btn btn-primary" type="submit">Enviar</button>
