@@ -3,11 +3,34 @@
 session_start();
 
 include "conecta.php";
-$objetoBase = new Conexao("localhost", "root", "", "form_tc");
-$objetoBase->abrirConexao();
-$con3ct = mysqli_connect("localhost", "root", "", "form_tc");
-ini_set('smtp', 'smtp.ifb.edu.br');
-ini_set('smtp_port', '3306');
+
+define('CONFIGHOST', $_SERVER['CONFIG_ENVIRONMENT']);
+defined('CONFIGHOST') || define('CONFIGHOST', ($_SERVER['CONFIG_ENVIRONMENT'] ?
+$_SERVER['CONFIG_ENVIRONMENT'] :
+'prd'));
+
+$config_base = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . "/config/" . CONFIGHOST . ".ini", true);
+
+$conexao = new mysqli(
+$config_base['database']['hostname'], 
+$config_base['database']['username'], 
+$config_base['database']['password'], 
+$config_base['database']['database']
+);
+mysqli_query($conexao, "SET NAMES '{$config_base['database']['char_set']}'");
+mysqli_query($conexao, "SET character_set_connection={$config_base['database']['char_set']}");
+mysqli_query($conexao, "SET character_set_client={$config_base['database']['char_set']}");
+mysqli_query($conexao, "SET character_set_results={$config_base['database']['char_set']}");
+
+
+// $objetoBase = new Conexao("localhost", "root", "", "form_tc");
+// $objetoBase->abrirConexao();
+// $con3ct = mysqli_connect("localhost", "root", "", "form_tc");
+
+ini_set('smtp', 'correio.mctic.gov.br');
+ini_set('smtp_port', '25');
+
+
 if ($_POST) {
     $nomeInst = $_POST['nomeInst'];
     $cnpj = $_POST['cnpj'];
