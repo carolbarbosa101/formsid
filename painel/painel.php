@@ -100,7 +100,7 @@ if (!isset($_SESSION['UsuarioID'])) {
     			<a class="btn btn-primary" href="sair.php" role="button">Sair</a>
     			<br><br>
 
-    			<p>Nome do Telecentro: TESTE</p>
+    			<p>Nome do : TESTE</p>
     			<p>Endereço do Telecentro: Teste</p>
     			<p>Bairro: Teste</p>
     			<p>Cidade: Teste</p>

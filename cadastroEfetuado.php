@@ -64,8 +64,8 @@
                  </div>
             <h2>Inscrição realizada com sucesso!</h2>
              ';
-        echo'                           <strong>Nome do telecentro: </strong><p>' . $nomeTele . '</p>
-                                        <strong>Endereço do telecentro: </strong><p>' . $endereco . '</p>
+        echo'                           <strong>Nome do PID: </strong><p>' . $nomeTele . '</p>
+                                        <strong>Endereço do PID: </strong><p>' . $endereco . '</p>
                                         <strong>Bairro: </strong><p>' . $bairro . '</p>  
                                         <strong>CEP: </strong><p>' . $cep . '</p>
                                         <strong>Telefone: </strong><p>' . $telefone . '</p>
@@ -73,17 +73,17 @@
                                         <strong>Email: </strong><p>' . $email . '</p>
                                         <strong>Estado: </strong><p><p>' . $estado . '</p>
                                         <strong>Cidade: </strong><p><p>' . $cidade . '</p>
-                                        <strong>O telecentro está em funcionamento? </strong><p><p>' . $situacaoTele . '</p>    
-                                        <strong>Qual a URL do site ou página online do Telecentro? </strong><p><p>' . $urlSite . '</p>
-                                        <strong>Quantidade de computadores em funcionamento no Telecentro: </strong><p>' . $qtdcomp . '</p>
+                                        <strong>O PID está em funcionamento? </strong><p><p>' . $situacaoTele . '</p>    
+                                        <strong>Qual a URL do site ou página online do PID? </strong><p><p>' . $urlSite . '</p>
+                                        <strong>Quantidade de computadores em funcionamento no PID: </strong><p>' . $qtdcomp . '</p>
                                         <strong>Velocidade da conexão Banda Larga: </strong><p>' . $velobl . '</p>
-                                        <strong>Nome da Instituição Responsável pelo Telecentro: </strong><p>' . $nomeInst . '</p>
+                                        <strong>Nome da Instituição Responsável pelo PID: </strong><p>' . $nomeInst . '</p>
                                         <strong>CNPJ: </strong><p>' . $cnpj . '</p>
-                                        <strong>Nome completo do Representante Legal do Telecentro: </strong><p>' . $nomeRepresentante . '</p>
+                                        <strong>Nome completo do Representante Legal do PID: </strong><p>' . $nomeRepresentante . '</p>
                                         <strong>CPF do representante: </strong><p>' . $cpfRe . '</p>
                                         <strong>Telefone do representante: </strong><p>' . $telefoneRe . '</p>
                                         <strong>Email do representante: </strong><p>' . $emailRe . '</p>
-                                        <strong>Nome completo do responsável pelo Telecentro: </strong><p>' . $nomeGestor . '</p>
+                                        <strong>Nome completo do responsável pelo PID: </strong><p>' . $nomeGestor . '</p>
                                         <strong>CPF do responsável: </strong><p>' . $cpfGe . '</p>
                                         <strong>Telefone do responsável: </strong><p>' . $telefoneRespo . '</p>
                                         <strong>Email do responsável: </strong><p>' . $emailRespo . '</p>
